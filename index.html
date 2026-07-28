@@ -3,35 +3,117 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sift</title>
+<title>Sift — Private Expense Tracker for iPhone</title>
+<meta name="description" content="Sift is a private expense tracker for iPhone. Scan receipts, import OCBC, UOB, Citibank, Revolut and Chocolate Finance statements, set budgets and split bills — all processed on your device. No account, no tracking.">
+<link rel="canonical" href="https://jonzyyyy.github.io/expense-tracker-site/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sift — Private Expense Tracker for iPhone">
+<meta property="og:description" content="Scan receipts, import bank statements, set budgets and split bills. Everything stays on your device.">
+<meta property="og:url" content="https://jonzyyyy.github.io/expense-tracker-site/">
+<meta name="twitter:card" content="summary_large_image">
+
 <style>
   :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.6; max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem;
+    line-height: 1.6; max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 4rem;
     color: #1c1c1e; background: #fff;
   }
   a { color: #0a63c9; }
-  .links { list-style: none; padding: 0; }
-  .links li { margin: 0.75rem 0; }
-  footer { margin-top: 3rem; font-size: 0.875rem; color: #6b6b70; }
+  h1 { font-size: 2.5rem; margin: 0 0 0.5rem; letter-spacing: -0.02em; }
+  .tagline { font-size: 1.2rem; color: #48484a; margin: 0 0 2rem; }
+  h2 { font-size: 1.3rem; margin: 2.75rem 0 1rem; letter-spacing: -0.01em; }
+  .badge {
+    display: inline-block; padding: 0.5rem 1rem; border-radius: 999px;
+    background: #f0f0f2; font-size: 0.9rem; color: #48484a; margin-bottom: 2rem;
+  }
+  .features { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); padding: 0; list-style: none; }
+  .features li { margin: 0; }
+  .features strong { display: block; margin-bottom: 0.15rem; }
+  .features span { color: #48484a; font-size: 0.95rem; }
+  .privacy {
+    border-left: 3px solid #0a63c9; padding: 0.75rem 0 0.75rem 1.25rem; margin: 1.5rem 0;
+  }
+  .banks { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; list-style: none; }
+  .banks li {
+    padding: 0.35rem 0.8rem; border-radius: 999px; background: #f0f0f2;
+    font-size: 0.9rem;
+  }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid #e4e4e7;
+    font-size: 0.9rem; color: #6b6b70;
+  }
+  footer a { margin-right: 1rem; }
   @media (prefers-color-scheme: dark) {
     body { color: #e8e8ea; background: #131316; }
     a { color: #6aa8f0; }
-    footer { color: #9a9aa0; }
+    .tagline, .features span { color: #a8a8b0; }
+    .badge, .banks li { background: #26262b; color: #a8a8b0; }
+    .privacy { border-left-color: #6aa8f0; }
+    footer { border-top-color: #2c2c31; color: #9a9aa0; }
   }
 </style>
 </head>
 <body>
-  <h1>Sift</h1>
-  <p>A personal expense tracker for iPhone and iPad that runs entirely on your
-     device. No account, no sign-in, and no data leaves your phone.</p>
 
-  <ul class="links">
-    <li><a href="privacy.html">Privacy Policy</a></li>
-    <li><a href="support.html">Support</a></li>
+  <h1>Sift</h1>
+  <p class="tagline">A private expense tracker for iPhone that keeps your money
+     data on your phone — not on someone's server.</p>
+
+  <!-- Swap for a real App Store badge once the app is live. -->
+  <p class="badge">Coming soon to the App&nbsp;Store</p>
+
+  <h2>What it does</h2>
+  <ul class="features">
+    <li><strong>Scan receipts</strong><span>Share any receipt photo straight into
+        Sift. The total, merchant and date are read on your device and filled in
+        for you.</span></li>
+    <li><strong>Import statements</strong><span>Bring in a PDF statement and Sift
+        pulls out the transactions — no re-typing a month of spending.</span></li>
+    <li><strong>Budgets that make sense</strong><span>Set limits per category and
+        see where you actually stand, not just where you've been.</span></li>
+    <li><strong>Split bills</strong><span>Track who owes what after a group meal
+        or trip, and settle up when the money lands.</span></li>
+    <li><strong>Spot subscriptions</strong><span>Sift notices recurring charges,
+        so the gym membership you forgot about stops being invisible.</span></li>
+    <li><strong>Any currency</strong><span>Spend abroad and amounts convert at the
+        rate on the day of the transaction.</span></li>
+    <li><strong>Log it by voice</strong><span>Ask Siri, tap the Action Button, or
+        use a Home Screen shortcut to record a payment in seconds.</span></li>
+    <li><strong>Trends worth reading</strong><span>See how spending moves across
+        months and categories, filtered however you like.</span></li>
   </ul>
 
-  <footer>© 2026 Jonathan Ngien</footer>
+  <h2>Your data stays yours</h2>
+  <div class="privacy">
+    <p>Sift has no account, no sign-in, and no analytics. Every transaction,
+       receipt and statement is stored and processed <strong>on your device
+       only</strong>. Nothing is uploaded, sold, or shared — there is no server
+       to upload it to.</p>
+    <p>The single network request Sift ever makes is a currency-rate lookup, and
+       it sends only a date and two currency codes. Never an amount, a merchant,
+       or anything identifying you. <a href="privacy.html">Read the full privacy
+       policy</a>.</p>
+  </div>
+
+  <h2>Statement import supports</h2>
+  <ul class="banks">
+    <li>OCBC</li>
+    <li>UOB</li>
+    <li>Citibank</li>
+    <li>Revolut</li>
+    <li>Chocolate Finance</li>
+    <li>Other PDF statements</li>
+  </ul>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="support.html">Support</a>
+    <a href="mailto:siftapp.support@gmail.com">Contact</a>
+    <p>© 2026 Jonathan Ngien</p>
+  </footer>
+
 </body>
 </html>
