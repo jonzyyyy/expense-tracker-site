@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Expense Tracker</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6; max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem;
+    color: #1c1c1e; background: #fff;
+  }
+  a { color: #0a63c9; }
+  h2 { margin-top: 2rem; font-size: 1.15rem; }
+  footer { margin-top: 3rem; font-size: 0.875rem; color: #6b6b70; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8ea; background: #131316; }
+    a { color: #6aa8f0; }
+    footer { color: #9a9aa0; }
+  }
+</style>
+</head>
+<body>
+  <p><a href="index.html">&larr; Expense Tracker</a></p>
+  <h1>Support</h1>
+
+  <p>Questions, bug reports, and feature requests are welcome by email:
+     <a href="mailto:ngienjon@gmail.com">ngienjon@gmail.com</a>.</p>
+
+  <h2>Where is my data stored?</h2>
+  <p>Entirely on your device. Expense Tracker has no account system and no
+     server. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+
+  <h2>Will my data sync between devices?</h2>
+  <p>Not currently. Data stays on the device where it was entered. Deleting the
+     app deletes its data, so back up your device if you want to keep it.</p>
+
+  <h2>Adding a transaction from a receipt</h2>
+  <p>Open the photo of your receipt in the Photos app, tap the Share button, and
+     choose <strong>Add from Receipt</strong>. The receipt is read on your device
+     and used to pre-fill the transaction, which you can edit before saving.</p>
+
+  <h2>Logging payments automatically from notifications</h2>
+  <p>This is optional and set up through Apple's Shortcuts app. Instructions are
+     in the app under Settings. The app cannot read notifications on its own —
+     it only receives text that a Shortcuts automation you create explicitly
+     passes to it.</p>
+
+  <h2>Foreign-currency transactions</h2>
+  <p>Amounts in another currency are converted using the European Central Bank
+     reference rate for the transaction's date. Rates are published on business
+     days, so weekend and holiday dates use the most recent prior business day.
+     If the lookup fails, the original amount and currency are still saved.</p>
+
+  <footer>© 2026 Jonathan Ngien</footer>
+</body>
+</html>

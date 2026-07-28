@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Expense Tracker</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6; max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem;
+    color: #1c1c1e; background: #fff;
+  }
+  a { color: #0a63c9; }
+  h2 { margin-top: 2.25rem; font-size: 1.15rem; }
+  .updated { color: #6b6b70; font-size: 0.9rem; }
+  .summary {
+    border-left: 3px solid #0a63c9; padding: 0.25rem 0 0.25rem 1rem; margin: 1.5rem 0;
+  }
+  footer { margin-top: 3rem; font-size: 0.875rem; color: #6b6b70; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8ea; background: #131316; }
+    a { color: #6aa8f0; }
+    .summary { border-left-color: #6aa8f0; }
+    .updated, footer { color: #9a9aa0; }
+  }
+</style>
+</head>
+<body>
+  <p><a href="index.html">&larr; Expense Tracker</a></p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 28 July 2026</p>
+
+  <p>Expense Tracker is a personal finance app that runs entirely on your device.
+     This policy explains what the app does and does not do with your
+     information.</p>
+
+  <div class="summary">
+    <p><strong>Summary.</strong> Expense Tracker does not collect, transmit, or
+    store your personal or financial data on any server. There is no account, no
+    login, and no analytics. Your transactions never leave your device.</p>
+  </div>
+
+  <h2>What the app stores</h2>
+  <p>All data you enter or import — transactions, amounts, merchants, categories,
+     budgets, split bills, and subscription records — is stored <strong>only in a
+     private database on your device</strong>, inside the app's shared container.
+     This data is:</p>
+  <ul>
+    <li>never uploaded to us or to any third party,</li>
+    <li>never used for advertising or profiling,</li>
+    <li>accessible only to you and to the app (and its Receipt share extension)
+        on your device,</li>
+    <li>covered by your device's own encryption and passcode protection.</li>
+  </ul>
+  <p>Deleting the app removes this database and all data in it. If you back up
+     your device to iCloud or a computer, the app's data may be included in that
+     backup, which is governed by Apple's privacy policy, not this one.</p>
+
+  <h2>Processing that happens on your device</h2>
+  <p>The following features process your information locally and send nothing
+     anywhere:</p>
+  <ul>
+    <li><strong>Receipt scanning.</strong> Photos you share into the app are read
+        using Apple's on-device Vision text recognition. The image and the
+        recognised text stay on your device.</li>
+    <li><strong>Statement import.</strong> PDF statements you import are parsed
+        on your device. The file's contents are not transmitted.</li>
+    <li><strong>Payment notification capture.</strong> When you use the app's
+        optional Shortcuts automation, the notification text is passed to the app
+        and parsed on your device.</li>
+    <li><strong>Categorisation.</strong> Merchant matching and category
+        suggestions run locally against keyword lists stored in the app.</li>
+  </ul>
+
+  <h2>The one network request the app makes</h2>
+  <p>When you record a transaction in a currency other than your home currency,
+     the app looks up the historical exchange rate from
+     <a href="https://frankfurter.dev">Frankfurter</a>, a free public API over
+     European Central Bank reference rates.</p>
+  <p>That request contains <strong>only a date and two three-letter currency
+     codes</strong> — for example, "what was EUR to SGD on 2026-05-14?". It does
+     not include the transaction amount, the merchant, the category, any account
+     details, or any identifier for you or your device. The conversion itself is
+     calculated on your device after the rate comes back.</p>
+  <p>If you never enter a foreign-currency transaction, the app makes no network
+     requests at all.</p>
+
+  <h2>What the app does not do</h2>
+  <ul>
+    <li>No user accounts, sign-in, or email collection.</li>
+    <li>No analytics, telemetry, crash-reporting SDKs, or usage tracking.</li>
+    <li>No advertising or advertising identifiers.</li>
+    <li>No third-party trackers or data brokers.</li>
+    <li>No connection to your bank; the app never asks for banking credentials
+        and cannot access your accounts.</li>
+    <li>No selling or sharing of data, because no data is collected.</li>
+  </ul>
+
+  <h2>Children's privacy</h2>
+  <p>The app does not collect data from anyone, including children under 13.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted at this address
+     with a revised "last updated" date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be sent to
+     <a href="mailto:ngienjon@gmail.com">ngienjon@gmail.com</a>.</p>
+
+  <footer>© 2026 Jonathan Ngien</footer>
+</body>
+</html>
